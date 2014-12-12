@@ -6,7 +6,8 @@
     "coffee-script": "",
     "keypress": "",
     "underscore": "",
-    "underscore.string": ""
+    "underscore.string": "",
+    "window-size": "^0.1.0"
   },
   "devDependencies": {},
   "engines": {

@@ -1,3 +1,4 @@
+winsize = require 'window-size'
 keypress = require 'keypress'
 util = require 'util'
 tty = require 'tty'
@@ -47,9 +48,8 @@ module.exports = T = new class TermUI extends EventEmitter
   }
 
   handleSizeChange: =>
-    winsize = process.stdout.getWindowSize()
-    @width = winsize[1]
-    @height = winsize[0]
+    @width = winsize.width
+    @height = winsize.height
     @emit 'resize', {w: @width, h: @height}
 
   out: (buf) ->
