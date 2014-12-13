@@ -194,7 +194,7 @@ class T.Button extends T.Widget
     super(opts)
 
     @fg = @options.fg ? T.C.w
-    @bg = @options.fg ? T.C.b
+    @bg = @options.bg ? T.C.b
 
     @label = @options.label ? ''
 
